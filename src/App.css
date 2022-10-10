@@ -49,3 +49,34 @@ body{
   cursor: pointer;
   background-color: #4b275c;
 }
+.gallery-nav-link:hover{
+  padding: 2px 4px 2px 4px;
+  cursor: pointer;
+  background-color: #7d4597;
+}
+
+.dropdown-list{
+  position: absolute;
+  background-color: #4b275c;
+  cursor:pointer;
+  font-size: 16pt;
+  margin-top: 2px;
+}
+.dropdownItem{
+  padding: 2px 3px 2px 3px;
+}
+
+
+.dropdownItem a{
+  color: white;
+  text-decoration: none;
+}
+
+.dropdownItem a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.dropdownItem:hover{
+  background-color: #7d4597;
+}

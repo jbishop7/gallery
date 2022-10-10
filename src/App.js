@@ -1,12 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/header';
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import HomePage from "./pages/main";
+import {Operator, Marshall} from './pages/snipers';
+import React, { useState, useEffect, useContext, createContext } from "react";
+
 
 function App() {
+
+
+
   return (
-      <div className = "valorant-skin-content">
-        <Header />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element = {<HomePage />} />
+          <Route path = "Operator" element = {<Operator />} />
+          <Route path = "Marshall" element = {<Marshall />} />
+
+        </Routes>
+      </BrowserRouter>
   );
 }
 
